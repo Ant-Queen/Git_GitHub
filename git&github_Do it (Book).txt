@@ -1,0 +1,49 @@
+깃&깃허브 입문 _ 지옥에서 온 문서 관리자 _ Do it - 이지스퍼블리싱
+    1장  깃 시작하기
+p.25    git
+p.25    git config -- global user.name ""
+        git config -- global user.email "@naver.com"
+p.26    pwd
+p.27    ls -la
+p.28    cd..
+        cd ?    // ? → 폴더
+        cd ~
+p.30    mkdir ?    // ? → 폴더
+p.31    rm -r ?    // ? → 폴더
+p.33    vim ?    // ? → 파일
+p.36    git config --global core.editor ""
+p.36    cat ?    // ? → 파일
+    2장  깃으로 버전 관리하기
+p.40    git init
+p.43    작업트리(working tree)
+        스테이지(stage)
+        저장소(repository)
+p.45    git status
+p.47    git add    // ? → 파일
+p.49    git commit -m ""
+        git commit -am ""
+p.50    git log
+        git log --stat
+p.55    git diff
+p.65    git commit --amend
+p.68    작업트리 취소
+        git checkout -- ""    // "" → 파일
+p.69    스테이징 되돌리기
+        git reset HEAD ?    // ? → 파일
+p.71    최신 커밋 되돌리기
+        git reset HEAD^
+p.77    특정 커밋으로 되돌리기
+        git reset --hard ?    // ? → 복사한 커밋 해시
+p.80    커밋 삭제하지 않고 되돌리기
+        git revert ?    // ? → 복사한 커밋 해시
+    3장  깃과 브랜치
+p.91    git branch
+p.92    git branch ?    // ? → 브랜치 이름
+p.95    git log --oneline
+        git checkout ?    // ? → 브랜치 이름
+p.97    git add .
+p.98    git log --oneline --branches
+p.99    git log --oneline --branches --graph
+p.100   git log ?..!    // ? → 브랜치 이름, ! → 브랜치 이름
+
+
