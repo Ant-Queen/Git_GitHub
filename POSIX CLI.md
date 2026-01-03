@@ -1,6 +1,6 @@
 # POSIX CLI
 
-> [!TIP]
+> [!NOTE]
 > 맨 끝에 물결 표시(~)는 현재 홈 디렉터리에 있다는 의미
 
 
@@ -26,7 +26,7 @@ ls -r           # 역순 목록
 ls -t           # 수정 시간 순 목록
 ```
 
-> [!TIP]
+> [!NOTE]
 > 숨김파일 (`.`으로 시작하는 파일)
 
 ```bash
@@ -34,7 +34,7 @@ ls -la          # 상세 + 숨김 파일 포함 목록
 ls -al          # 상세 + 숨김 파일 포함 목록
 ```
 
-> [!TIP]
+> [!NOTE]
 > 옵션은 순서와 상관없이 조합해서 사용할 수 있습니다.  
 
 
@@ -68,7 +68,7 @@ rm -r dirname      # 디렉터리와 그 안의 내용까지 삭제
 
 ## vim - 텍스트 편집기
 ```bash
-vim file_name  # file_name이 존대하면 해당 파일을 열어 편집, 없으면 새 파일 생성
+vim file_name   # file_name이 존대하면 해당 파일을 열어 편집, 없으면 새 파일 생성
 ```
 
 `A` 또는 `I` - 편집 모드로 전환  
@@ -81,21 +81,14 @@ vim file_name  # file_name이 존대하면 해당 파일을 열어 편집, 없�
 `:q!` - 저장하지 않고 종료  
 
 
+## cat (Concatenate) - 파일 내용 확인
+```bash
+cat file_name   # file_name → 내용 확인할 파일 이름
+```
 
-p.36    git config --global core.editor ""
-p.36    cat ?    // ? → 파일
-    2장  깃으로 버전 관리하기
-p.40    git init
-p.43    작업트리(working tree)
-        스테이지(stage)
-        저장소(repository)
-p.45    git status
-p.47    git add    // ? → 파일
-p.49    git commit -m ""
-        git commit -am ""
-p.50    git log
-        git log --stat
-p.55    git diff
+
+
+
 p.65    git commit --amend
 p.68    작업트리 취소
         git checkout -- ""    // "" → 파일

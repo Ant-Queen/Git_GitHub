@@ -1,35 +1,96 @@
-# Git CLI
-버전관리, 백업, 협업
+# Git CLI (Git Command Line Interface)
 
-## Git 사용법
+## Git 개념
+
+분산 버전 관리 시스템(DVCS)  
+핵심 기능 - 버전관리, 백업, 협업
+
+### git - Git 명령어 확인
 ```bash
 git
 ```
 
-## Git 사용자 정보 설정
+### Git 사용자 정보 설정
 ```bash
 git config --global user.name ""
 git config --global user.email "@naver.com"
 ```
 
+### Git 기본 편집기 설정
 ```bash
 git config --global core.editor ""
 ```
 
-p.36    git config --global core.editor ""
-p.36    cat ?    // ? → 파일
-    2장  깃으로 버전 관리하기
-p.40    git init
-p.43    작업트리(working tree)
-        스테이지(stage)
-        저장소(repository)
-p.45    git status
-p.47    git add    // ? → 파일
-p.49    git commit -m ""
-        git commit -am ""
-p.50    git log
-        git log --stat
-p.55    git diff
+<br>
+<br>
+<br>
+
+## 버전관리
+
+| 영역 | 설명 | 예시 명령어 |
+|---|---|---|
+| 작업트리 (Working Tree) | 실제 파일이 존재하는 디렉터리. 사용자가 직접 수정·추가·삭제하는 공간 | `git status` |
+| 스테이지 (Stage) | 커밋할 준비가 된 파일을 모아두는 임시 공간. "커밋 후보" 영역 | `git add file.txt` |
+| 저장소 (Repository) | 커밋된 파일들이 기록되는 데이터베이스. `.git` 디렉터리에 존재 | `git commit -m "메시지"` |
+
+### Git 저장소 초기화
+```bash
+git init
+```
+
+### Git 현재 상태 확인
+```bash
+git status
+```
+
+| 줄 | 의미 |
+|-----|------|
+| `On branch master` | 현재 작업 중인 브랜치는 `master`입니다. (기본 브랜치) |
+| `No commits yet` | 아직 커밋된 내용이 없습니다. 즉, 저장소에 기록된 변경 사항이 없음 |
+| `Nothing to commit` | 스테이지에 올라간 파일이 없고, 작업트리에도 변경된 파일이 없음 |
+| `Untracked files` | Git이 추적하지 않는 파일들이 존재함. 즉, 새로 생성된 파일이나 디렉터리가 있음 |
+| `Changes to be committed` | 스테이지에 올라간 파일들이 존재함. 즉, 커밋할 준비가 된 변경 사항이 있음 |
+| `Changes not staged for commit` | 작업트리에서 변경된 파일들이 있지만, 스테이지에는 올라가지 않은 상태임 |
+| `nothing to commit, working tree clean` | 작업트리에 변경된 파일이 없고, 스테이지에도 커밋할 파일이 없음. 즉, 현재 상태가 깔끔함 |
+| `modified: filename` | `filename` 파일이 수정되었음을 나타냄 |
+| `new file: filename` | `filename` 파일이 새로 생성되었음을 나타냄 |
+| `deleted: filename` | `filename` 파일이 삭제되었음을 나타냄 |
+
+
+### Git 파일 스테이지에 추가
+```bash
+git add name    # name → 파일 이름
+```
+
+### Git 커밋 생성
+```bash
+git commit -m "commit message"      # "commit message" → 커밋 메시지
+git commit -am "commit message"     # 한 번이라도 커밋한 적이 있는 수정된 파일을 스테이지에 올리고 커밋 생성
+```
+
+### Git 커밋 기록 확인
+```bash
+git log
+git log --stat          # 각 커밋에 대한 변경된 파일과 라인 수 요약 정보 포함
+```
+
+### Git 변경 사항 비교
+```bash
+git diff
+```
+
+| 구분 | 의미 | 예시 | 커밋 포함 여부 |
+|------|------|------|----------------|
+| **Tracked Files** | Git이 추적하는 파일들. 이미 커밋에 포함되었거나 `git add`로 스테이징된 파일 | 기존 프로젝트 파일, 수정 후 `git add`한 파일 | 포함 가능 |
+| **Untracked Files** | Git이 추적하지 않는 파일들. 새로 생성했지만 아직 `git add`하지 않은 파일 | 새로 만든 `hello.txt`를 아직 추가하지 않은 경우 | 포함되지 않음 |
+
+> [!NOTE]  
+> `.gitignore` 파일을 사용하여 Git이 추적하지 않도록 설정할 수 있습니다.
+
+
+tracked files - Git이 추적하는 파일들  
+untracked files - Git이 추적하지 않는 파일들
+
 p.65    git commit --amend
 p.68    작업트리 취소
         git checkout -- ""    // "" → 파일
