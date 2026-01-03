@@ -8,18 +8,14 @@ git
 
 ## Git 사용자 정보 설정
 ```bash
-git config -- global user.name ""
-git config -- global user.email "@naver.com"
+git config --global user.name ""
+git config --global user.email "@naver.com"
 ```
 
+```bash
+git config --global core.editor ""
+```
 
-
-p.28    cd..
-        cd ?    // ? → 폴더
-        cd ~
-p.30    mkdir ?    // ? → 폴더
-p.31    rm -r ?    // ? → 폴더
-p.33    vim ?    // ? → 파일
 p.36    git config --global core.editor ""
 p.36    cat ?    // ? → 파일
     2장  깃으로 버전 관리하기
