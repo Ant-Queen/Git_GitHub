@@ -1,8 +1,8 @@
 깃&깃허브 입문 _ 지옥에서 온 문서 관리자 _ Do it - 이지스퍼블리싱
     1장  깃 시작하기
 p.25    git
-p.25    git config -- global user.name ""
-        git config -- global user.email "@naver.com"
+p.25    git config --global user.name ""
+        git config --global user.email "@naver.com"
 p.26    pwd
 p.27    ls -la
 p.28    cd..
