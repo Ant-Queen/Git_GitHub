@@ -89,17 +89,7 @@ cat file_name   # file_name → 내용 확인할 파일 이름
 
 
 
-p.65    git commit --amend
-p.68    작업트리 취소
-        git checkout -- ""    // "" → 파일
-p.69    스테이징 되돌리기
-        git reset HEAD ?    // ? → 파일
-p.71    최신 커밋 되돌리기
-        git reset HEAD^
-p.77    특정 커밋으로 되돌리기
-        git reset --hard ?    // ? → 복사한 커밋 해시
-p.80    커밋 삭제하지 않고 되돌리기
-        git revert ?    // ? → 복사한 커밋 해시
+
     3장  깃과 브랜치
 p.91    git branch
 p.92    git branch ?    // ? → 브랜치 이름
