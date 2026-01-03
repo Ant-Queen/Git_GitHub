@@ -95,7 +95,18 @@ git diff
 git commit --amend
 ```
 
+### Git 작업트리에서 수정한 파일 되돌리기
+```bash
+git checkout -- file_name               # file_name → 파일
+git restore file_name                   # file_name → 파일 // Git 2.23 이후 권장
+```
+> [!CAUTION]  
+> 되돌린 내용은 다시 복구할 수 없습니다.
 
+### Git 스테이징된 파일 되돌리기
+```bash
+git restore --staged file_name          # file_name → 파일 // 스테이징 해제, 작업트리의 수정 내용은 유지
+```
 
 
 p.68    작업트리 취소
