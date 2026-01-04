@@ -45,5 +45,9 @@ p.97    git add .
 p.98    git log --oneline --branches
 p.99    git log --oneline --branches --graph
 p.100   git log ?..!    // ? → 브랜치 이름, ! → 브랜치 이름
-
-
+p.105   git merge
+p.113   충돌(conflict)
+p.127   git stash
+p.128   git stash pop
+p.129   git stash apply
+        git stash drop
