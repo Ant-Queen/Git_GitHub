@@ -51,3 +51,5 @@ p.127   git stash
 p.128   git stash pop
 p.129   git stash apply
         git stash drop
+p.145   git remote add origin remote_repository_URL
+p.146   

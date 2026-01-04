@@ -46,7 +46,7 @@ git status
 
 | 줄 | 의미 |
 |-----|------|
-| `On branch master` | 현재 작업 중인 브랜치는 `master`입니다. (기본 브랜치) |
+| `On branch main` | 현재 작업 중인 브랜치는 `main`입니다. (기본 브랜치) |
 | `No commits yet` | 아직 커밋된 내용이 없습니다. 즉, 저장소에 기록된 변경 사항이 없음 |
 | `Nothing to commit` | 스테이지에 올라간 파일이 없고, 작업트리에도 변경된 파일이 없음 |
 | `Untracked files` | Git이 추적하지 않는 파일들이 존재함. 즉, 새로 생성된 파일이나 디렉터리가 있음 |
@@ -235,3 +235,42 @@ git rebase branch_name        # branch_name → 기준이 될 브랜치 이름
 <br>
 
 ## 백업 및 원격 저장소
+
+### 원격 저장소 추가
+```bash
+git remote add origin remote_repository_URL    # remote_repository_URL → 원격 저장소 URL
+```
+
+### 원격 저장소 목록 확인
+```bash
+git remote -v               # 원격 저장소 목록 확인
+```
+
+### 원격 저장소로 최초 푸시
+```bash
+git push -u origin main     # branch_name → 로컬 브랜치 이름 // 원격 저장소에 브랜치 최초 푸시, -u 옵션은 지역 저장소의 브랜치를 원격 저장소의 브랜치와 연결, 처음에 한 번만 사용하면 됨
+```
+
+### 원격 저장소로 현재 브랜치 푸시
+```bash
+git push                    # 원격 저장소에 현재 브랜치 푸시
+```
+
+### 원격 저장소에서 변경 사항 가져오기
+```bash
+git pull                    # 원격 저장소에서 현재 브랜치의 변경 사항을 가져와 병합
+```
+
+<br>
+<br>
+<br>
+
+## 깃허브에 SSH 원격 접속하기
+
+### SSH 키 생성
+```bash
+ssh-keygen
+```
+> [!NOTE]  
+> 생성된 SSH 키는 기본적으로 `~/.ssh/id_rsa` (개인 키)와 `~/.ssh/id_rsa.pub` (공개 키) 파일에 저장됩니다.
+
