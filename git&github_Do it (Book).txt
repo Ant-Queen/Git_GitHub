@@ -52,4 +52,8 @@ p.128   git stash pop
 p.129   git stash apply
         git stash drop
 p.145   git remote add origin remote_repository_URL
-p.146   
+p.146   git remote -v
+p.147   git push -u origin main
+p.149   git push
+p.153   git pull
+p.157   ssh-keygen

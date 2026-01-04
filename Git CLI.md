@@ -272,5 +272,4 @@ git pull                    # 원격 저장소에서 현재 브랜치의 변경 
 ssh-keygen
 ```
 > [!NOTE]  
-> 생성된 SSH 키는 기본적으로 `~/.ssh/id_rsa` (개인 키)와 `~/.ssh/id_rsa.pub` (공개 키) 파일에 저장됩니다.
-
+> 생성된 SSH 키는 기본적으로 `~/.ssh/id_rsa` (개인 키)와 `~/.ssh/id_rsa.pub` (공개 키) 파일에 저장됩니다.  
