@@ -13,8 +13,8 @@ git
 
 ### Git 사용자 정보 설정
 ```bash
-git config --global user.name ""
-git config --global user.email "@naver.com"
+git config --global user.name "name"            # "name" → 사용자 이름
+git config --global user.email "@naver.com"     # "@naver.com" → 사용자 이메일
 ```
 
 ### Git 기본 편집기 설정
@@ -280,4 +280,24 @@ ssh-keygen
 ## 협업하기
 ```bash
 git clone remote_repository_URL    # remote_repository_URL → 원격 저장소 URL
+```
+
+### 원격 저장소의 변경 사항 가져오기
+```bash
+git fetch       # 원격 저장소의 변경 사항을 로컬로 가져오기 (병합하지 않음)
+```
+
+### 가져온 변경 사항을 현재 브랜치에 반영
+```bash
+git checkout FETCH_HEAD    # FETCH_HEAD → 가장 최근에 가져온 커밋, 커밋하기전에 반영된 상태를 확인할 때 사용
+```
+
+### 가져온 변경 사항을 현재 브랜치에 병합
+```bash
+git merge FETCH_HEAD       # FETCH_HEAD → 가장 최근에 가져온 커밋
+```
+### Git 사용자 정보 설정 (로컬 저장소 기준)
+```bash
+git config user.name "mame"         # "mame" → 사용자 이름
+git config user.email "@naver.com"  # "@naver.com" → 사용자 이메일
 ```
