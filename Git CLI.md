@@ -125,8 +125,7 @@ git reset HEAD^         # 최신 커밋을 취소하고, 변경 사항을 스테
 |---|---|---|---|---|
 | `git reset --soft HEAD^` | 커밋만 되돌림 | 유지됨 | 유지됨 | 커밋만 취소, 수정 내용과 스테이징은 그대로 |
 | `git reset --mixed HEAD^` (기본값) | 커밋 + 스테이징 되돌림 | 스테이징 해제 | 유지됨 | 커밋과 스테이징 취소, 수정 내용은 남음 |
-| `git reset --hard HEAD^` | 커밋 + 스테이징 + 작업트리 되돌림 | 되돌림 | 되돌림 | 모든 변경 사항 삭제, 완전히 이전 커밋 상태로 돌아감, 복구 불가 |
-
+| `git reset --hard HEAD^` | 커밋 + 스테이징 + 작업트리 되돌림 | 되돌림 | 되돌림 | 모든 변경 사항 삭제, 완전히 이전 커밋 상태로 돌아감 |
 
 ### 특정 커밋으로 되돌리기
 ```bash
@@ -306,3 +305,25 @@ git merge FETCH_HEAD       # FETCH_HEAD → 가장 최근에 가져온 커밋
 git config user.name "mame"         # "mame" → 사용자 이름
 git config user.email "@naver.com"  # "@naver.com" → 사용자 이메일
 ```
+
+
+
+
+
+### 커밋 기록 확인
+```bash
+git reflog            # 모든 참조 변경 이력 확인
+```
+
+### Git 명령어 별칭 설정
+```bash
+git config --global alias.alias_name 'git_command'   # alias_name → 별칭, git_command → 실제 git 명령어
+```
+
+```bash
+git bisect start                     # 바이섹트 시작
+git bisect good                     # 현재 커밋이 정상 작동하는 경우
+git bisect bad                      # 현재 커밋이 문제가 있는 경우
+git bisect reset                    # 바이섹트 종료 및 원래 상태로 복원
+```
+https://www.youtube.com/watch?v=-UERw--siBw
