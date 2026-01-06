@@ -57,3 +57,10 @@ p.147   git push -u origin main
 p.149   git push
 p.153   git pull
 p.157   ssh-keygen
+p.168   git clone remote_repository_URL
+p.182   git fetch
+p.184   git checkout FETCH_HEAD
+p.185   git merge FETCH_HEAD
+p.189   git config user.name "mame"
+        git config user.email "@naver.com"
+p.197   풀 리퀘스트

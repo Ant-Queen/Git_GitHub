@@ -13,8 +13,8 @@ git
 
 ### Git 사용자 정보 설정
 ```bash
-git config --global user.name ""
-git config --global user.email "@naver.com"
+git config --global user.name "name"            # "name" → 사용자 이름
+git config --global user.email "@naver.com"     # "@naver.com" → 사용자 이메일
 ```
 
 ### Git 기본 편집기 설정
@@ -79,6 +79,8 @@ git log --oneline       # 각 커밋을 한 줄로 요약하여 표시
 git log --oneline --branches            # 모든 브랜치의 커밋을 한 줄로 요약하여 표시
 git log --oneline --branches --graph    # 브랜치 구조를 그래프로 시각화하여 표시
 git log branch_name..other_branch_name  # branch_name 브랜치에만 있는 커밋 확인, 브랜치 비교
+git log --all           # 모든 브랜치의 커밋 기록 확인
+git log --all -oneline  # 모든 브랜치의 커밋을 한 줄로 요약하여 표시
 git reflog              # 모든 참조 변경 이력 확인
 ```
 
@@ -275,3 +277,29 @@ ssh-keygen
 > 생성된 SSH 키는 기본적으로 `~/.ssh/id_rsa` (개인 키)와 `~/.ssh/id_rsa.pub` (공개 키) 파일에 저장됩니다.  
 > 사용자폴더에 `.ssh` 폴더가 없으면 자동으로 생성됩니다.  
 > SSH 키 생성 시 프롬프트에 따라 엔터를 눌러 기본 경로와 빈 암호를 사용하면 됩니다.  
+
+
+## 협업하기
+```bash
+git clone remote_repository_URL    # remote_repository_URL → 원격 저장소 URL
+```
+
+### 원격 저장소의 변경 사항 가져오기
+```bash
+git fetch       # 원격 저장소의 변경 사항을 로컬로 가져오기 (병합하지 않음)
+```
+
+### 가져온 변경 사항을 현재 브랜치에 반영
+```bash
+git checkout FETCH_HEAD    # FETCH_HEAD → 가장 최근에 가져온 커밋, 커밋하기전에 반영된 상태를 확인할 때 사용
+```
+
+### 가져온 변경 사항을 현재 브랜치에 병합
+```bash
+git merge FETCH_HEAD       # FETCH_HEAD → 가장 최근에 가져온 커밋
+```
+### Git 사용자 정보 설정 (로컬 저장소 기준)
+```bash
+git config user.name "mame"         # "mame" → 사용자 이름
+git config user.email "@naver.com"  # "@naver.com" → 사용자 이메일
+```
