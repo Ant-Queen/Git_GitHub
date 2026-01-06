@@ -80,6 +80,8 @@ git log --oneline --branches            # 모든 브랜치의 커밋을 한 줄�
 git log --oneline --branches --graph    # 브랜치 구조를 그래프로 시각화하여 표시
 git log branch_name..other_branch_name  # branch_name 브랜치에만 있는 커밋 확인, 브랜치 비교
 git reflog              # 모든 참조 변경 이력 확인
+git log --all           # 모든 브랜치의 커밋 기록 확인
+git log --all -oneline  # 모든 브랜치의 커밋을 한 줄로 요약하여 표시
 ```
 
 ### 변경 사항 비교
