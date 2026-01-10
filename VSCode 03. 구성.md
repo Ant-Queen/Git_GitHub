@@ -7,4 +7,5 @@
 
 <br>
 
-## 표시 언어 변경 (Changing the Display Language)
+### 표시 언어 변경 (Changing the Display Language)
+
