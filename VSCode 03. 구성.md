@@ -3,8 +3,6 @@
 
 ## 표시 언어 (Display Language)
 
-<br>
-
 ### 표시 언어 변경 (Changing the Display Language)
 
 명령팔레트 - "Configure Display Language" - "ko" 선택 - 재시작
@@ -35,3 +33,12 @@ code . --locale=en
 > [!NOTE]  
 > 외부 터미널에서 사용할 수 있습니다.  
 > (VS Code 내부 터미널에서는 작동하지 않습니다.)
+
+<br>
+<br>
+
+## 레이아웃 (Layout)
+
+### 작업대 (Workbench)
+
+#### 기본 사이드바
