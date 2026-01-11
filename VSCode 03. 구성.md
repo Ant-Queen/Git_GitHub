@@ -5,10 +5,11 @@
 
 ### 표시 언어 변경 (Changing the Display Language)
 
-명령팔레트 - "Configure Display Language" - "ko" 선택 - 재시작
+명령팔레트 - `Configure Display Language` - `ko` 선택 - 재시작
 
 > [!NOTE]  
-> `.vscode` 폴더의 `argv.json` 파일에 기록 됩니다.
+> `argv.json` 파일에 기록 됩니다.  
+> C:\Users\사용자\\.vscode\argv.json
 
 <br>
 
@@ -18,7 +19,7 @@
 
 ### 마켓플레이스 언어 팩 (Marketplace Language Packs)
 
-확장 - 마켓플레이스 - "Korean Language Pack for Visual Studio Code", Microsoft
+확장 - 마켓플레이스 - `Korean Language Pack for Visual Studio Code`, Microsoft
 
 <br>
 
@@ -39,6 +40,22 @@ code . --locale=en
 
 ## 레이아웃 (Layout)
 
-### 작업대 (Workbench)
+### 워크벤치 (Workbench)
 
 #### 기본 사이드바
+
+drag and drop  
+설정 - `workbench.sideBar.location`
+
+#### 보조 사이드바
+
+drag and drop  
+설정 - `workbench.secondarySideBar.defaultVisibility`
+
+> [!NOTE]  
+> 모든 뷰와 패널을 기본 위치로 되돌리기  
+> 명령팔레트 - `View: Reset View Locations`
+
+#### 명령 팔레트 위치
+
+drag and drop
