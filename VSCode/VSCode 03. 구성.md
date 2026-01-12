@@ -13,19 +13,20 @@
 
 <br>
 
-### 사용 가능한 지역 (Available locales)
+### (X) 사용 가능한 지역 (Available locales)
 
 <br>
 
 ### 마켓플레이스 언어 팩 (Marketplace Language Packs)
 
-확장 - 마켓플레이스 - `Korean Language Pack for Visual Studio Code`, Microsoft
+확장 - `Korean Language Pack for Visual Studio Code`, Microsoft
 
 <br>
 
 ### (X) 언어 설정 (Setting the Language)
 
-VS Code 세션에서 특정 언어를 사용 (1회성)
+VSCode 세션에서 특정 언어를 사용
+> 세션 : 프로그램을 시작하고 종료할 때까지의 기간 (1회성)
 
 ```bash
 code . --locale=kr
@@ -44,10 +45,14 @@ code . --locale=en
 
 #### 기본 사이드바
 
+![alt text](<images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
+
 - drag and drop  
 - 설정 - `workbench.sideBar.location`
 
 #### 보조 사이드바
+
+
 
 - drag and drop  
 - 설정 - `workbench.secondarySideBar.defaultVisibility`
