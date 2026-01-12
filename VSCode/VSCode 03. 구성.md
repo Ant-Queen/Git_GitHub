@@ -45,7 +45,7 @@ code . --locale=en
 
 #### 기본 사이드바
 
-![alt text](<images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
+![alt text](<../images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
 
 - drag and drop  
 - 설정 - `workbench.sideBar.location`
