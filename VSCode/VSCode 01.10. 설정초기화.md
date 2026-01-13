@@ -1,4 +1,5 @@
 # VSCode - 설정 (SETUP) - 제거 (Uninstall Visual Studio Code)
+
 > [from the Visual Studio Code documentation](https://code.visualstudio.com/docs/setup/uninstall)
 
 ## 깔끔한 제거 - 🧹 VS Code Clean Uninstall / 설정 초기화

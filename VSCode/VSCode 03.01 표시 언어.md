@@ -1,4 +1,5 @@
 # VSCode - 구성 (CONFIGURE) - 표시 언어 (Display Language)
+
 > [from the Visual Studio Code documentation](https://code.visualstudio.com/docs/configure/locales)
 
 ## 표시 언어 변경 (Changing the Display Language)
@@ -30,6 +31,7 @@ VSCode 세션에서 특정 언어를 사용
 code . --locale=kr
 code . --locale=en
 ```
+
 > [!NOTE]  
 > 외부 터미널에서 사용할 수 있습니다.  
 > (VS Code 내부 터미널에서는 작동하지 않습니다.)

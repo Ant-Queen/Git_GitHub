@@ -1,4 +1,5 @@
 # VSCode - 설정 (SETUP)
+
 > [from the Visual Studio Code documentation](https://code.visualstudio.com/docs/setup/setup-overview)
 
 ## (X) 개요 (Overview)
@@ -34,7 +35,6 @@ VSCode를 USB 드라이브에서 실행할 수 있습니다.
 <br>
 
 ## (X) 추가 구성 요소
-
 
 <br>
 

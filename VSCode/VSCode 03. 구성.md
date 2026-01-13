@@ -20,8 +20,6 @@
 
 #### 보조 사이드바
 
-
-
 - drag and drop  
 - 설정 - `workbench.secondarySideBar.defaultVisibility`
 
