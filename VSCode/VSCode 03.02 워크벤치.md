@@ -7,14 +7,14 @@
 
 ### 기본 사이드바
 
-![alt text](<../images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
+![기본 사이드바](<../images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
 
 - drag and drop  
 - 설정 - `workbench.sideBar.location`
 
 ### 보조 사이드바
 
-
+![보조 사이드바](<../images/VSCode/구성/레이아웃/워크벤치/보조 사이드바.jpg>)
 
 - drag and drop  
 - 설정 - `workbench.secondarySideBar.defaultVisibility`
@@ -24,6 +24,8 @@
 > 명령팔레트 - `View: Reset View Locations`
 
 ### 명령 팔레트 위치
+
+![명령 팔레트](<../images/VSCode/구성/레이아웃/워크벤치/명령 팔레트.jpg>)
 
 - drag and drop  
 - 레이아웃 사용자 지정 버튼
