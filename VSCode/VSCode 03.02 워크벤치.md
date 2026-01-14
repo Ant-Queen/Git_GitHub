@@ -33,7 +33,9 @@
 
 <br>
 
-### 작업 표시줄 위치 (Activity Bar position)
+### 작업 표시줄 (액티비티 바 Activity Bar position)
+
+![작업 표시줄(액티비티 바)](<../images/VSCode/구성/레이아웃/워크벤치/작업 표시줄(액티비티 바).jpg>)
 
 보기 - 모양 - 작업 표시줄 위치
 
