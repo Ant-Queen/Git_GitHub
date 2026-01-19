@@ -4,3 +4,7 @@
 
 확장 - `Korean Language Pack for Visual Studio Code`, Microsoft
 
+### 🔸 레이아웃 사용자 지정
+
+- 전체 화면 `F11`
+- Zen 모드 `Ctrl+K` `Z`
