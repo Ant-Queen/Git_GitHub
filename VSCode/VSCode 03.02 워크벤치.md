@@ -52,3 +52,7 @@
 - 가운데 정렬
 
 <br>
+
+### 🔸 창 및 메뉴 스타일
+
+⚙️ window.titleBarStyle  
