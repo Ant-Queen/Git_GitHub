@@ -8,8 +8,8 @@
 
 ![기본 사이드바](<../images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
 
-- drag and drop  
-- 설정 - `workbench.sideBar.location`
+- 🖱 drag and drop  
+- ⚙️ 설정 - `workbench.sideBar.location`
 
 <br>
 
@@ -17,8 +17,8 @@
 
 ![보조 사이드바](<../images/VSCode/구성/레이아웃/워크벤치/보조 사이드바.jpg>)
 
-- drag and drop  
-- 설정 - `workbench.secondarySideBar.defaultVisibility`
+- 🖱 drag and drop  
+- ⚙️ 설정 - `workbench.secondarySideBar.defaultVisibility`
 
 > [!NOTE]  
 > 모든 뷰와 패널을 기본 위치로 되돌리기  
@@ -26,11 +26,11 @@
 
 <br>
 
-### 🔸 명령 팔레트 (`Ctrl`+`Shift`+`P`)
+### 🔸 🎨 명령 팔레트 (`Ctrl`+`Shift`+`P`)
 
 ![명령 팔레트](<../images/VSCode/구성/레이아웃/워크벤치/명령 팔레트.jpg>)
 
-- drag and drop  
+- 🖱 drag and drop  
 - 레이아웃 사용자 지정 버튼 ![레이아웃 사용자 지정 버튼](<../images/VSCode/구성/레이아웃/워크벤치/레이아웃 사용자 지정 버튼.jpg>)
 
 <br>
@@ -55,4 +55,7 @@
 
 ### 🔸 창 및 메뉴 스타일
 
-⚙️ window.titleBarStyle  
+- ⚙️ window.titleBarStyle   <!-- 제목 표시줄 스타일 -->
+- ⚙️ window.title           <!-- 창 제목 표시 형식 -->
+- ⚙️ window.titleSeparator  <!-- 제목 표시줄 구분 기호 표시 여부 -->
+

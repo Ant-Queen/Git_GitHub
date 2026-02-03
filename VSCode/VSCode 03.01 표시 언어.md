@@ -4,7 +4,7 @@
 
 ## 표시 언어 변경 (Changing the Display Language)
 
-명령팔레트 - `Configure Display Language` - `ko` 선택 - 재시작
+🎨 명령팔레트 - `Configure Display Language` - `ko` 선택 - 재시작
 
 > [!NOTE]  
 > `argv.json` 파일에 기록 됩니다.  
@@ -12,17 +12,17 @@
 
 <br>
 
-## (X) 사용 가능한 지역 (Available locales)
+## ❌ 사용 가능한 지역 (Available locales)
 
 <br>
 
 ## 마켓플레이스 언어 팩 (Marketplace Language Packs)
 
-확장 - `Korean Language Pack for Visual Studio Code`, Microsoft
+![alt text](../images/확장.jpg) ![alt text](../images/확장2.jpg) 확장 - `Korean Language Pack for Visual Studio Code`, Microsoft
 
 <br>
 
-## (X) 언어 설정 (Setting the Language)
+## ❌ 언어 설정 (Setting the Language)
 
 VSCode 세션에서 특정 언어를 사용
 > 세션 : 프로그램을 시작하고 종료할 때까지의 기간 (1회성)

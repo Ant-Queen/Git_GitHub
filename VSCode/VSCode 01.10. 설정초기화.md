@@ -13,8 +13,8 @@
 
 1. VS Code 종료 (Clean Uninstall 할 경우 삭제)
 2. 아래 두 폴더 삭제
-   - `%APPDATA%\Code`
-   - `%USERPROFILE%\.vscode`
+   - 📁 `%APPDATA%\Code`
+   - 📁 `%USERPROFILE%\.vscode`
 
 #### 명령 프롬프트(Command Prompt) 명령어
 
