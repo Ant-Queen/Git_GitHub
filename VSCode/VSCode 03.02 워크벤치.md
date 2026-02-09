@@ -63,4 +63,13 @@
 
 ## 패널 (Panel)
 
-### 🔸 패널 위치 
+![패널](../images/VSCode/구성/레이아웃/패널/패널.jpg)
+
+### 🔸 패널 위치
+
+보기 - 모양 - 패널 위치
+
+🎨 workbench.action.positionPanelLeft
+🎨 workbench.action.positionPanelRight
+🎨 workbench.action.positionPanelBottom
+🎨 workbench.action.positionPanelTop
