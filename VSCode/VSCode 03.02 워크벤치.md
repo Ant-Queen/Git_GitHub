@@ -55,7 +55,6 @@
 
 ### 🔸 창 및 메뉴 스타일
 
-- ⚙️ window.titleBarStyle   <!-- 제목 표시줄 스타일 -->
+- ❌ ⚙️ window.titleBarStyle   <!-- 제목 표시줄 스타일 -->
 - ⚙️ window.title           <!-- 창 제목 표시 형식 -->
 - ⚙️ window.titleSeparator  <!-- 제목 표시줄 구분 기호 표시 여부 -->
-
