@@ -55,6 +55,12 @@
 
 ### 🔸 창 및 메뉴 스타일
 
-- ❌ ⚙️ window.titleBarStyle   <!-- 제목 표시줄 스타일 -->
-- ⚙️ window.title           <!-- 창 제목 표시 형식 -->
-- ⚙️ window.titleSeparator  <!-- 제목 표시줄 구분 기호 표시 여부 -->
+- ❌⚙️ window.titleBarStyle     <!-- 제목 표시줄 스타일 -->
+- ❌⚙️ window.title             <!-- 창 제목 표시 형식 -->
+- ❌⚙️ window.titleSeparator    <!-- 제목 표시줄 구분 기호 표시 여부 -->
+- ❌⚙️ window.menuStyle         <!-- 메뉴 스타일 -->
+- ❌⚙️ window.menuBarVisibility <!-- 메뉴 표시줄 표시 여부 -->
+
+## 패널 (Panel)
+
+### 🔸 패널 위치 
