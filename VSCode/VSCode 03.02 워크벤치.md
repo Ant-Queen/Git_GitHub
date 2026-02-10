@@ -73,3 +73,11 @@
 🎨 workbench.action.positionPanelRight
 🎨 workbench.action.positionPanelBottom
 🎨 workbench.action.positionPanelTop
+
+### 🔸 패널 정렬
+
+보기 - 모양 - 패널 정렬
+
+
+
+![패널 최대화](<../images/VSCode/구성/레이아웃/패널/패널 최대화.jpg>)
