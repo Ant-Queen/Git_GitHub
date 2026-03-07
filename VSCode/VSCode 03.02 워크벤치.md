@@ -69,14 +69,14 @@
 
 보기 - 모양 - 패널 위치
 
-🎨 workbench.action.positionPanelLeft
-🎨 workbench.action.positionPanelRight
-🎨 workbench.action.positionPanelBottom
-🎨 workbench.action.positionPanelTop
+- 🎨 workbench.action.positionPanelLeft
+- 🎨 workbench.action.positionPanelRight
+- 🎨 workbench.action.positionPanelBottom
+- 🎨 workbench.action.positionPanelTop
 
 ### 🔸 패널 정렬
 
-보기 - 모양 - 패널 정렬
+보기 - 모양 - 패널 맞춤
 
 
 
