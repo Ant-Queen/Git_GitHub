@@ -8,7 +8,7 @@
 
 ![기본 사이드바](<../images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
 
-- 🖱 drag and drop  
+- 🖱️ Drag and Drop  
 - ⚙️ 설정 - `workbench.sideBar.location`
 
 <br>
@@ -17,7 +17,7 @@
 
 ![보조 사이드바](<../images/VSCode/구성/레이아웃/워크벤치/보조 사이드바.jpg>)
 
-- 🖱 drag and drop  
+- 🖱️ Drag and Drop  
 - ⚙️ 설정 - `workbench.secondarySideBar.defaultVisibility`
 
 > [!NOTE]  
@@ -30,7 +30,7 @@
 
 ![명령 팔레트](<../images/VSCode/구성/레이아웃/워크벤치/명령 팔레트.jpg>)
 
-- 🖱 drag and drop  
+- 🖱️ Drag and Drop  
 - 레이아웃 사용자 지정 버튼 ![레이아웃 사용자 지정 버튼](<../images/VSCode/구성/레이아웃/워크벤치/레이아웃 사용자 지정 버튼.jpg>)
 
 <br>
