@@ -42,3 +42,5 @@ word wrap : `alt` + `z`
 | 최근 파일 열기 | `ctrl` + `r` |
 | 모든 편집기 닫기 | `ctrl` + `k` `ctrl` + `w` |
 | 모든 창 닫기 | `ctrl` + `k` `ctrl` + `f4` |
+
+`Ctrl` + `Alt` + `Shift`
