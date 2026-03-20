@@ -1,5 +1,9 @@
 {
-  "MD033": {
-    "allowed_elements": ["br"]
-  }
-}
+  "MD003": false,  // 제목 스타일(ATX vs Setext) 강제
+  "MD013": false,  // 라인 길이 제한
+  "MD033": {       // HTML 태그 사용 제한
+    "allowed_elements": ["br", "pre", "ins", "sup", "sub", "code"]  // 허용할 HTML 태그 목록
+  },
+  "MD041": false,  // 문서 첫 줄은 제목이어야 함
+  "MD045": false   // 이미지에 alt 텍스트 필요
+} 
