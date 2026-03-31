@@ -41,7 +41,7 @@
 
 ![작업 표시줄(액티비티 바)](</images/VSCode/구성/레이아웃/워크벤치/작업 표시줄(액티비티 바).jpg>)
 
-보기 - 모양 - 작업 표시줄 위치
+☰️ 보기 - 모양 - 작업 표시줄 위치
 
 <br>
 
@@ -63,13 +63,16 @@
 - ❌⚙️ window.menuStyle         <!-- 메뉴 스타일 -->
 - ❌⚙️ window.menuBarVisibility <!-- 메뉴 표시줄 표시 여부 -->
 
+<br>
+<br>
+
 ## 패널 (Panel)
 
 ![패널](/images/VSCode/구성/레이아웃/패널/패널.jpg)
 
 ### 🔶 패널 위치
 
-보기 - 모양 - 패널 위치
+☰️ 보기 - 모양 - 패널 위치
 
 - 🎨 workbench.action.positionPanelLeft
 - 🎨 workbench.action.positionPanelRight
@@ -78,6 +81,6 @@
 
 ### 🔶 패널 정렬
 
-보기 - 모양 - 패널 맞춤
+☰️ 보기 - 모양 - 패널 맞춤
 
 ![패널 최대화](</images/VSCode/구성/레이아웃/패널/패널 최대화.jpg>)
