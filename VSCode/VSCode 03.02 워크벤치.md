@@ -4,7 +4,11 @@
 
 ## 워크벤치 (Workbench)
 
-### 🔸 기본 사이드바
+> [!NOTE]  
+> 모든 뷰와 패널을 기본 위치로 되돌리기  
+> 🎨 명령팔레트 - `View: Reset View Locations`  
+
+### 🔶 기본 사이드바
 
 ![기본 사이드바](</images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
 
@@ -13,29 +17,27 @@
 
 <br>
 
-### 🔸 보조 사이드바
+### 🔶 보조 사이드바
 
 ![보조 사이드바](</images/VSCode/구성/레이아웃/워크벤치/보조 사이드바.jpg>)
 
 - 🖱️ Drag and Drop  
 - ⚙️ 설정 - `workbench.secondarySideBar.defaultVisibility`
 
-> [!NOTE]  
-> 모든 뷰와 패널을 기본 위치로 되돌리기  
-> 명령팔레트 - `View: Reset View Locations`  
-
 <br>
 
-### 🔸 🎨 명령 팔레트 (`Ctrl`+`Shift`+`P`)
+### 🔶 🎨 명령 팔레트 (`Ctrl`+`Shift`+`P`)
 
 ![명령 팔레트](</images/VSCode/구성/레이아웃/워크벤치/명령 팔레트.jpg>)
 
 - 🖱️ Drag and Drop  
-- 레이아웃 사용자 지정 버튼 ![레이아웃 사용자 지정 버튼](</images/VSCode/구성/레이아웃/워크벤치/레이아웃 사용자 지정 버튼.jpg>)
+- 레이아웃 사용자 지정 버튼  
+![레이아웃 사용자 지정 버튼](</images/VSCode/구성/레이아웃/워크벤치/레이아웃 사용자 지정 버튼.jpg>)  
+![alt text](</images/VSCode/구성/레이아웃/워크벤치/명령 팔레트 위치 지정.jpg>)
 
 <br>
 
-### 🔸 작업 표시줄 (액티비티 바 Activity Bar)
+### 🔶 작업 표시줄 (액티비티 바 Activity Bar)
 
 ![작업 표시줄(액티비티 바)](</images/VSCode/구성/레이아웃/워크벤치/작업 표시줄(액티비티 바).jpg>)
 
@@ -43,7 +45,7 @@
 
 <br>
 
-### 🔸 레이아웃 사용자 지정
+### 🔶 레이아웃 사용자 지정
 
 ![레이아웃 사용자 지정 버튼](</images/VSCode/구성/레이아웃/워크벤치/레이아웃 사용자 지정 버튼.jpg>)
 
@@ -53,7 +55,7 @@
 
 <br>
 
-### 🔸 창 및 메뉴 스타일
+### 🔶 창 및 메뉴 스타일
 
 - ❌⚙️ window.titleBarStyle     <!-- 제목 표시줄 스타일 -->
 - ❌⚙️ window.title             <!-- 창 제목 표시 형식 -->
@@ -65,7 +67,7 @@
 
 ![패널](/images/VSCode/구성/레이아웃/패널/패널.jpg)
 
-### 🔸 패널 위치
+### 🔶 패널 위치
 
 보기 - 모양 - 패널 위치
 
@@ -74,7 +76,7 @@
 - 🎨 workbench.action.positionPanelBottom
 - 🎨 workbench.action.positionPanelTop
 
-### 🔸 패널 정렬
+### 🔶 패널 정렬
 
 보기 - 모양 - 패널 맞춤
 
