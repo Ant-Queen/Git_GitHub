@@ -41,7 +41,8 @@
 
 ![작업 표시줄(액티비티 바)](</images/VSCode/구성/레이아웃/워크벤치/작업 표시줄(액티비티 바).jpg>)
 
-☰️ 보기 - 모양 - 작업 표시줄 위치
+- ☰️ 보기 - 모양 - 작업 표시줄 위치
+- ⚙️ 설정 - `workbench.activityBar.compact`    <!-- 작업 표시줄 크기 변경 -->`
 
 <br>
 
@@ -57,11 +58,11 @@
 
 ### 🔶 창 및 메뉴 스타일
 
-- ❌⚙️ window.titleBarStyle     <!-- 제목 표시줄 스타일 -->
-- ❌⚙️ window.title             <!-- 창 제목 표시 형식 -->
-- ❌⚙️ window.titleSeparator    <!-- 제목 표시줄 구분 기호 표시 여부 -->
-- ❌⚙️ window.menuStyle         <!-- 메뉴 스타일 -->
-- ❌⚙️ window.menuBarVisibility <!-- 메뉴 표시줄 표시 여부 -->
+- ❌⚙️ window.titleBarStyle     (제목 표시줄 스타일)
+- ❌⚙️ window.title             (창 제목 표시 형식)
+- ❌⚙️ window.titleSeparator    (제목 표시줄 구분 기호 표시 여부)
+- ❌⚙️ window.menuStyle         (메뉴 스타일)
+- ❌⚙️ window.menuBarVisibility (메뉴 표시줄 표시 여부)
 
 <br>
 <br>
