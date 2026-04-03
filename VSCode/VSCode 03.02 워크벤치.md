@@ -12,7 +12,9 @@
 
 ![기본 사이드바](</images/VSCode/구성/레이아웃/워크벤치/기본 사이드바.jpg>)
 
+사이드바 위치 변경
 - 🖱️ Drag and Drop  
+-  [작업 표시줄]에서 마우스 🖱️오른쪽 클릭 [기본 사이드 바를 오른쪽으로 이동]
 - ⚙️ 설정 - `workbench.sideBar.location`
 
 <br>
@@ -60,11 +62,11 @@
 
 |||
 |--|--|
-|- ❌⚙️ window.titleBarStyle     | 제목 표시줄 스타일 |
-|- ❌⚙️ window.title             | 창 제목 표시 형식 |
-|- ❌⚙️ window.titleSeparator    | 제목 표시줄 구분 기호 표시 여부 |
-|- ❌⚙️ window.menuStyle         | 메뉴 스타일 |
-|- ❌⚙️ window.menuBarVisibility | 메뉴 표시줄 표시 여부 |
+| ⚙️ window.titleBarStyle     | 제목 표시줄 스타일 |
+| ⚙️ window.title             | 창 제목 표시 형식 |
+| ⚙️ window.titleSeparator    | 제목 표시줄 구분 기호 표시 여부 |
+| ⚙️ window.menuStyle         | 메뉴 스타일 |
+| ⚙️ window.menuBarVisibility | 메뉴 표시줄 표시 여부 |
 
 <br>
 <br>
@@ -77,13 +79,17 @@
 
 ☰️ 보기 - 모양 - 패널 위치
 
-- 🎨 workbench.action.positionPanelLeft
-- 🎨 workbench.action.positionPanelRight
-- 🎨 workbench.action.positionPanelBottom
-- 🎨 workbench.action.positionPanelTop
+|||
+|--|--|
+|🎨 workbench.action.positionPanelLeft   | 패널을 왼쪽으로 이동 |
+|🎨 workbench.action.positionPanelRight  | 패널을 오른쪽으로 이동 |
+|🎨 workbench.action.positionPanelBottom | 패널을 아래로 이동 |
+|🎨 workbench.action.positionPanelTop    | 패널을 위로 이동 |
 
 ### 🔶 패널 정렬
 
 ☰️ 보기 - 모양 - 패널 맞춤
+
+### 🔶 패널 최대화
 
 ![패널 최대화](</images/VSCode/구성/레이아웃/패널/패널 최대화.jpg>)
