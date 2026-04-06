@@ -1,5 +1,21 @@
 # VSCode Docs 정리 중
 
+## 확장 ![alt text](/images/확장.jpg)
+
+![alt text](/images/확장.jpg) VSCode 언어 팩 (한국어) - `Korean Language Pack for Visual Studio Code`, Microsoft
+
+|  |  |  |
+|---|---|---|
+| VSCode 언어 팩 (한국어) | `Korean Language Pack for Visual Studio Code` | Microsoft |
+|  |  |  |
+
+
+
+
+
+
+==========================================
+
 ## 깔끔한 제거 - 🧹 VS Code Clean Uninstall / 설정 초기화
 
 [VS Code Clean Uninstall / 설정 초기화](<VSCode/VSCode 01.10. 설정초기화.md>)
