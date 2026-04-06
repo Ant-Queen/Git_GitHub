@@ -1,5 +1,9 @@
 # VSCode Docs 정리 중
 
+## 깔끔한 제거 - 🧹 VS Code Clean Uninstall / 설정 초기화
+
+[VS Code Clean Uninstall / 설정 초기화](<VSCode/VSCode 01.10. 설정초기화.md>)
+
 ## 표시 언어 변경 (Changing the Display Language)
 
 🎨 명령팔레트 - `Configure Display Language` - `ko` 선택 - 재시작
