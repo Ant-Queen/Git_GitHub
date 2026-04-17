@@ -28,7 +28,7 @@
 
 <br>
 
-### 🔶 🎨 명령 팔레트 (`Ctrl`+`Shift`+`P`)
+### 🔶 🎨 명령 팔레트 (⌨️`Ctrl`+`Shift`+`P`)
 
 ![명령 팔레트](</images/VSCode/구성/레이아웃/워크벤치/명령 팔레트.jpg>)
 
@@ -52,9 +52,9 @@
 
 ![레이아웃 사용자 지정 버튼](</images/VSCode/구성/레이아웃/워크벤치/레이아웃 사용자 지정 버튼.jpg>)
 
-- 전체 화면 `F11`
-- Zen 모드 `Ctrl+K` `Z`
-- 가운데 정렬
+- 전체 화면 ⌨️`F11`
+- Zen 모드 ⌨️`Ctrl+K` `Z`
+- 가운데 맞춤 레이아웃
 
 <br>
 
@@ -79,12 +79,12 @@
 
 ☰️ 보기 - 모양 - 패널 위치
 
-|||
-|--|--|
-|🎨 workbench.action.positionPanelLeft   | 패널을 왼쪽으로 이동 |
-|🎨 workbench.action.positionPanelRight  | 패널을 오른쪽으로 이동 |
-|🎨 workbench.action.positionPanelBottom | 패널을 아래로 이동 |
-|🎨 workbench.action.positionPanelTop    | 패널을 위로 이동 |
+| | |
+| --- | --- |
+| 🎨 workbench.action.positionPanelLeft   | 패널을 왼쪽으로 이동 |
+| 🎨 workbench.action.positionPanelRight  | 패널을 오른쪽으로 이동 |
+| 🎨 workbench.action.positionPanelBottom | 패널을 아래로 이동 |
+| 🎨 workbench.action.positionPanelTop    | 패널을 위로 이동 |
 
 ### 🔶 패널 정렬
 
