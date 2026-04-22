@@ -154,7 +154,17 @@
 
 ⌨️ `Ctrl + K` and `Ctrl + Shift + \`
 
-🎨 View: Split Editor in Group  
-🎨 View: Toggle Split Editor in Group  
-🎨 View: Join Editor in Group  
-🎨 View: Toggle Layout of Split Editor in Group
+- 🎨 View: Split Editor in Group  
+- 🎨 View: Toggle Split Editor in Group  
+- 🎨 View: Join Editor in Group  
+- 🎨 View: Toggle Layout of Split Editor in Group
+
+양측 간 이동 방법:
+- 🎨 View: Focus First Side in Active Editor
+- 🎨 View: Focus Second Side in Active Editor
+- 🎨 View: Focus Other Side in Active Editor
+
+☰️ 보기 - 편집기 레이아웃 - 그룹으로 분할
+⚙️ workbench.editor.splitInGroupLayout
+
+### 그리드 레이아웃
