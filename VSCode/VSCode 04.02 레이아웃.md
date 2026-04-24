@@ -168,3 +168,8 @@
 ⚙️ workbench.editor.splitInGroupLayout
 
 ### 그리드 레이아웃
+
+편집기 레이아웃(분할과 크기조정)
+
+### 플로팅 윈도우
+
