@@ -11,3 +11,10 @@
 ## 레이아웃 (Layout)
 
 ## ⁉️ 키보드 단축키
+
+## 설정
+
+### 설정 편집기
+단축키 : `Ctrl + ,`
+
+vscode://settings/editor.fontSize

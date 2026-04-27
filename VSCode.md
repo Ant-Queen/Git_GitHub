@@ -1,11 +1,22 @@
 # VSCode Docs 정리 중
 
-## 깔끔한 제거 - 🧹 VS Code Clean Uninstall / 설정 초기화
+## ⌨️ 단축키
 
-[VS Code Clean Uninstall / 설정 초기화](<VSCode/VSCode 01.10. 설정초기화.md>)
+|  |  |
+|---|---|
+| 🎨 명령팔레트 | `Ctrl + Shift + P` |
+| ⚙️ 설정창 | `Ctrl + ,` |
+| 전체 화면 | `F11` |
+| Zen 모드 | `Ctrl + K` and `Z` |
 
-<br>
-<br>
+## 🎨 명령팔레트 (⌨️ `Ctrl + Shift + P`)
+***
+
+|  |  |  |
+|---|---|---|
+| 기본 설정: 사용자 설정 열기(JSON) | Preferences: Open User Settings (JSON) |  |
+| 기본 설정: 작업 설정 열기(JSON) | Preferences: Open Workspace Settings (JSON) |  |
+
 
 ## 표시 언어 변경 (Changing the Display Language)
 
