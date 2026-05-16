@@ -18,19 +18,6 @@
 | 기본 설정: 작업 설정 열기(JSON) | Preferences: Open Workspace Settings (JSON) |  |
 
 
-## 표시 언어 변경 (Changing the Display Language)
-
-🎨 명령팔레트 - `Configure Display Language` - `ko` 선택 - 재시작
-
-<br>
-
-## 마켓플레이스 언어 팩 (Marketplace Language Packs)
-
-![alt text](/images/확장.jpg) 확장 - `Korean Language Pack for Visual Studio Code`, Microsoft
-
-<br>
-<br>
-
 ## 워크벤치 (Workbench)
 
 > [!NOTE]  
