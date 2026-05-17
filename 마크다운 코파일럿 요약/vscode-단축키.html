@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Code 키보드 단축키 설정 가이드</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #111;
+    }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px;
+      background: white;
+      box-shadow: 0 0 24px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3, h4 {
+      color: #222;
+      margin-top: 1.8em;
+    }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.7rem; }
+    h3 { font-size: 1.35rem; }
+    p, li {
+      font-size: 1rem;
+    }
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      background: #f4f6fb;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f4f6fb;
+      padding: 16px;
+      overflow-x: auto;
+      border-radius: 8px;
+      border: 1px solid #e1e7ee;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 16px 0;
+    }
+    th, td {
+      border: 1px solid #dfe3ea;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5fb;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>VS Code 키보드 단축키 설정 가이드</h1>
+    <p>원문: <a href="https://code.visualstudio.com/docs/configure/keybindings" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/docs/configure/keybindings</a></p>
+
+    <h2>1. 개요</h2>
+    <p>Visual Studio Code는 강력한 키보드 단축키 편집 환경을 제공하여 마우스 없이도 대부분의 작업을 수행할 수 있습니다. 기본 단축키를 수정하거나 새로운 단축키를 추가할 수 있으며, 키보드 레이아웃에 관계없이 작동하도록 설정할 수도 있습니다.</p>
+
+    <h2>2. 키보드 단축키 에디터 (Keyboard Shortcuts Editor)</h2>
+    <h3>열기</h3>
+    <ul>
+      <li><strong>메뉴</strong>: File &gt; Preferences &gt; Keyboard Shortcuts</li>
+      <li><strong>단축키</strong>: <code>Ctrl+K Ctrl+S</code></li>
+      <li><strong>명령</strong>: Command Palette에서 "Preferences: Open Keyboard Shortcuts" 검색</li>
+    </ul>
+    <h3>기능</h3>
+    <ul>
+      <li>모든 사용 가능한 명령을 나열 (단축키 할당 여부와 관계없이)</li>
+      <li>단축키를 변경, 제거, 초기화</li>
+      <li>검색창에서 명령이나 단축키를 입력하여 필터링</li>
+      <li>키보드 레이아웃에 맞춰 단축키를 표시</li>
+    </ul>
+    <p>예를 들어 US 키보드의 <code>Cmd+\</code>는 독일 키보드에서 <code>Ctrl+Shift+Alt+Cmd+7</code>로 표시됩니다.</p>
+
+    <h2>3. UI 작업의 단축키 커스터마이징 (Customize shortcuts for UI actions)</h2>
+    <p>VS Code의 UI 요소에 대한 단축키를 추가하거나 변경:</p>
+    <ol>
+      <li>작업 항목에 우클릭</li>
+      <li>"Configure Keybinding" 선택</li>
+      <li>키보드 단축키 에디터가 해당 명령으로 필터링되어 열림</li>
+      <li><code>when</code> 클로저가 자동으로 포함됨</li>
+    </ol>
+
+    <h2>4. 키맵 확장 (Keymap extensions)</h2>
+    <p>다른 편집기(Vim, Emacs, Sublime Text 등)의 단축키를 VS Code에서 사용 가능하게 해주는 확장.</p>
+    <h3>마이그레이션</h3>
+    <ol>
+      <li>File &gt; Preferences &gt; Migrate Keyboard Shortcuts from... 선택</li>
+      <li>인기 있는 키맵 확장 목록 확인</li>
+      <li>또는 마켓플레이스에서 "Keymaps" 카테고리에서 검색</li>
+    </ol>
+
+    <h2>5. 키보드 단축키 참조 (Keyboard Shortcuts Reference)</h2>
+    <h3>인쇄 가능한 PDF</h3>
+    <ol>
+      <li>Help &gt; Keyboard Shortcut Reference 선택</li>
+      <li>플랫폼별 PDF 다운로드:</li>
+    </ol>
+    <ul>
+      <li><a href="https://go.microsoft.com/fwlink/?linkid=832145" target="_blank" rel="noopener noreferrer">Windows</a></li>
+      <li><a href="https://go.microsoft.com/fwlink/?linkid=832143" target="_blank" rel="noopener noreferrer">macOS</a></li>
+      <li><a href="https://go.microsoft.com/fwlink/?linkid=832144" target="_blank" rel="noopener noreferrer">Linux</a></li>
+    </ul>
+
+    <h2>6. 키보드 단축키 충돌 감지 (Detecting keyboard shortcut conflicts)</h2>
+    <p>많은 확장을 설치했을 때 같은 단축키가 여러 명령에 할당될 수 있습니다.</p>
+    <h3>충돌 확인</h3>
+    <ol>
+      <li>키보드 단축키 에디터에서 항목에 우클릭</li>
+      <li>"Show Same Keybindings" 선택</li>
+      <li>동일한 단축키를 사용하는 모든 항목 표시</li>
+    </ol>
+
+    <h2>7. 키보드 단축키 문제 해결 (Troubleshooting keyboard shortcuts)</h2>
+    <h3>디버깅 활성화</h3>
+    <ol>
+      <li>Command Palette에서 "Developer: Toggle Keyboard Shortcuts Troubleshooting" 실행</li>
+      <li>단축키를 입력하면 Output 패널에서 감지 내용 확인</li>
+      <li>VS Code가 감지한 단축키와 실행된 명령 확인 가능</li>
+    </ol>
+    <h3>로그 예시</h3>
+    <pre><code>[KeybindingService]: / Received keydown event - modifiers: [meta], code: Slash
+[KeybindingService]: | Converted keydown event - modifiers: [meta], code: Slash
+[KeybindingService]: | Resolving meta+[Slash]
+[KeybindingService]: \ From 2 keybinding entries, matched editor.action.commentLine
+</code></pre>
+
+    <h2>8. 수정된 단축키 보기 (Viewing modified keyboard shortcuts)</h2>
+    <p>자신이 수정한 단축키만 필터링하여 표시:</p>
+    <ol>
+      <li>키보드 단축키 에디터의 ... (More Actions) 메뉴 클릭</li>
+      <li>"Show User Keybindings" 선택</li>
+      <li><code>@source:user</code> 필터 자동 적용</li>
+    </ol>
+
+    <h2>9. 고급 커스터마이징 (Advanced customization)</h2>
+    <h3>keybindings.json 파일</h3>
+    <p>VS Code는 커스터마이징한 단축키를 <code>keybindings.json</code> 파일에 저장합니다. 이 파일을 직접 편집하여 고급 설정이 가능합니다.</p>
+    <h4>파일 열기</h4>
+    <ul>
+      <li>키보드 단축키 에디터 &gt; 제목 표시줄의 "Open Keyboard Shortcuts (JSON)" 버튼</li>
+      <li>Command Palette &gt; "Preferences: Open Default Keyboard Shortcuts (JSON)"</li>
+    </ul>
+
+    <h2>10. 키보드 규칙 (Keyboard rules)</h2>
+    <h3>규칙 구조</h3>
+    <p>각 규칙(keybinding)은 다음 속성으로 구성됩니다:</p>
+    <pre><code>{
+  "key": "ctrl+f",
+  "command": "actions.find",
+  "when": "editorTextFocus"
+}
+</code></pre>
+    <h4>키 조합 (Chords)</h4>
+    <p>두 개의 연속된 키 입력은 스페이스로 구분:</p>
+    <pre><code>{ "key": "ctrl+k enter", "command": "workbench.action.keepEditor" },
+{ "key": "ctrl+k ctrl+w", "command": "workbench.action.closeAllEditors" }
+</code></pre>
+    <h3>규칙 평가 순서</h3>
+    <ol>
+      <li>규칙은 아래에서 위로 평가</li>
+      <li><code>key</code>와 <code>when</code> 조건을 모두 만족하는 첫 번째 규칙이 적용</li>
+      <li>일치하는 규칙이 있으면 명령 실행 후 더 이상 진행하지 않음</li>
+      <li><code>keybindings.json</code>의 규칙은 기본 규칙 아래에 추가되므로 기본 규칙을 덮어쓸 수 있음</li>
+    </ol>
+    <h3>예시</h3>
+    <pre><code>// 에디터에 포커스가 있을 때 활성
+{ "key": "home", "command": "cursorHome", "when": "editorTextFocus" },
+{ "key": "shift+home", "command": "cursorHomeSelect", "when": "editorTextFocus" },
+
+// 상황에 따라 다른 명령 실행
+{ "key": "f5", "command": "workbench.action.debug.continue", "when": "inDebugMode" },
+{ "key": "f5", "command": "workbench.action.debug.start", "when": "!inDebugMode" },
+
+// 전역 단축키
+{ "key": "ctrl+f", "command": "actions.find" },
+{ "key": "alt+left", "command": "workbench.action.navigateBack" },
+{ "key": "alt+right", "command": "workbench.action.navigateForward" }
+</code></pre>
+
+    <h2>11. 허용된 키 (Accepted keys)</h2>
+    <h3>수정자 (Modifiers)</h3>
+    <table>
+      <thead>
+        <tr><th>플랫폼</th><th>수정자</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>macOS</td><td><code>Ctrl+</code>, <code>Shift+</code>, <code>Alt+</code>, <code>Cmd+</code></td></tr>
+        <tr><td>Windows</td><td><code>Ctrl+</code>, <code>Shift+</code>, <code>Alt+</code>, <code>Win+</code></td></tr>
+        <tr><td>Linux</td><td><code>Ctrl+</code>, <code>Shift+</code>, <code>Alt+</code>, <code>Meta+</code></td></tr>
+      </tbody>
+    </table>
+    <h3>키 (Keys)</h3>
+    <ul>
+      <li><strong>함수 키</strong>: F1-F19</li>
+      <li><strong>알파벳/숫자</strong>: a-z, 0-9</li>
+      <li><strong>기호</strong>: <code>`</code>, <code>-</code>, <code>=</code>, <code>[</code>, <code>]</code>, <code>\</code>, <code>;</code>, <code>'</code>, <code>,</code>, <code>.</code>, <code>/</code></li>
+      <li><strong>이동 키</strong>: left, up, right, down, pageup, pagedown, end, home</li>
+      <li><strong>특수 키</strong>: tab, enter, escape, space, backspace, delete</li>
+      <li><strong>기타</strong>: pausebreak, capslock, insert</li>
+      <li><strong>숫자 패드</strong>: numpad0-numpad9, numpad_multiply, numpad_add, numpad_separator, numpad_subtract, numpad_decimal, numpad_divide</li>
+    </ul>
+
+    <h2>12. 명령 인수 (Command arguments)</h2>
+    <p>특정 파일이나 폴더에 대해 같은 작업을 자주 수행할 때 명령에 인수를 전달:</p>
+    <pre><code>{
+  "key": "enter",
+  "command": "type",
+  "args": { "text": "Hello World" },
+  "when": "editorTextFocus"
+}
+</code></pre>
+    <p>이 경우 Enter 키를 누르면 "Hello World"가 입력됩니다.</p>
+    <p>더 자세한 정보: <a href="https://code.visualstudio.com/api/references/commands" target="_blank" rel="noopener noreferrer">Built-in Commands</a></p>
+
+    <h2>13. 여러 명령 실행 (Running multiple commands)</h2>
+    <p><code>runCommands</code> 명령을 사용하여 순차적으로 여러 명령 실행:</p>
+    <h3>예시 1: 명령을 인수 없이 실행</h3>
+    <pre><code>{
+  "key": "ctrl+alt+c",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      "editor.action.copyLinesDownAction",
+      "cursorUp",
+      "editor.action.addCommentLine",
+      "cursorDown"
+    ]
+  }
+}
+</code></pre>
+    <p>현재 줄을 복사하고, 현재 줄을 주석 처리하고, 커서를 복사된 줄로 이동합니다.</p>
+    <h3>예시 2: 명령에 인수 전달</h3>
+    <pre><code>{
+  "key": "ctrl+n",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      {
+        "command": "workbench.action.files.newUntitledFile",
+        "args": {
+          "languageId": "typescript"
+        }
+      },
+      {
+        "command": "editor.action.insertSnippet",
+        "args": {
+          "langId": "typescript",
+          "snippet": "class ${1:ClassName} {\n\tconstructor() {\n\t\t$0\n\t}\n}"
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+    <p>새로운 TypeScript 파일을 만들고 클래스 스니펫을 삽입합니다.</p>
+    <h3>여러 인수 전달</h3>
+    <pre><code>{
+  "key": "ctrl+shift+e",
+  "command": "runCommands",
+  "args": {
+    "commands": [
+      {
+        "command": "myCommand",
+        "args": ["arg1", "arg2"]
+      }
+    ]
+  }
+}
+</code></pre>
+    <p>배열을 첫 번째 인수로 전달하려면 배열을 다시 감싸기: <code>"args": [ [1, 2, 3] ]</code></p>
+
+    <h2>14. 단축키 제거 (Removing a keyboard shortcut)</h2>
+    <h3>UI를 통해 제거</h3>
+    <ol>
+      <li>키보드 단축키 에디터에서 항목에 우클릭</li>
+      <li>"Remove Keybinding" 선택</li>
+    </ol>
+    <h3>keybindings.json을 통해 제거</h3>
+    <p>명령 앞에 <code>-</code> 기호를 붙여 제거 규칙 생성:</p>
+    <pre><code>// 기본 단축키에서
+{ "key": "tab", "command": "tab", "when": ... },
+{ "key": "tab", "command": "jumpToNextSnippetPlaceholder", "when": ... },
+
+// 두 번째 규칙을 제거하려면 keybindings.json에 추가:
+{ "key": "tab", "command": "-jumpToNextSnippetPlaceholder" }
+</code></pre>
+    <h3>단축키 비활성화</h3>
+    <p>특정 단축키를 완전히 비활성화하려면 명령을 빈 문자열로 설정:</p>
+    <pre><code>// 모든 tab 단축키를 비활성화
+{ "key": "tab", "command": "" }
+</code></pre>
+
+    <h2>15. 키보드 레이아웃 (Keyboard layouts)</h2>
+    <h3>UI 표시</h3>
+    <ul>
+      <li>모든 키보드 단축키는 현재 시스템의 키보드 레이아웃으로 렌더링됨</li>
+      <li>예: French (France) 레이아웃에서 <code>Split Editor</code>는 <code>Ctrl+*</code>로 표시됨</li>
+    </ul>
+    <h3>keybindings.json 편집 시</h3>
+    <ul>
+      <li>VS Code는 오해의 소지가 있는 단축키를 강조 표시</li>
+      <li>예: US 레이아웃으로 정의되었지만 현재 레이아웃에서 다른 키를 눌러야 하는 경우</li>
+    </ul>
+    <h3>단축키 정의 위젯</h3>
+    <ol>
+      <li><code>keybindings.json</code> 편집 중 <code>Ctrl+K Ctrl+K</code> 입력</li>
+      <li>원하는 키 조합 입력</li>
+      <li>VS Code가 JSON 표현과 감지된 키 표시</li>
+      <li>Enter를 눌러 규칙 스니펫 삽입</li>
+    </ol>
+    <p><strong>참고</strong>: Linux에서는 VS Code 시작 시 키보드 레이아웃을 감지하고 캐시합니다. 레이아웃 변경 후에는 VS Code를 다시 시작하는 것이 권장됩니다.</p>
+
+    <h2>16. 키보드 레이아웃 독립적 바인딩 (Keyboard layout-independent bindings)</h2>
+    <p>스캔 코드를 사용하면 키보드 레이아웃 변경 시에도 작동하는 단축키를 정의할 수 있습니다:</p>
+    <pre><code>{ "key": "cmd+[Slash]", "command": "editor.action.commentLine", "when": "editorTextFocus" }
+</code></pre>
+    <h3>허용된 스캔 코드</h3>
+    <ul>
+      <li><strong>함수 키</strong>: [F1]-[F19]</li>
+      <li><strong>문자/숫자</strong>: [KeyA]-[KeyZ], [Digit0]-[Digit9]</li>
+      <li><strong>기호</strong>: [Backquote], [Minus], [Equal], [BracketLeft], [BracketRight], [Backslash], [Semicolon], [Quote], [Comma], [Period], [Slash]</li>
+      <li><strong>이동 키</strong>: [ArrowLeft], [ArrowUp], [ArrowRight], [ArrowDown], [PageUp], [PageDown], [End], [Home]</li>
+      <li><strong>특수 키</strong>: [Tab], [Enter], [Escape], [Space], [Backspace], [Delete]</li>
+      <li><strong>기타</strong>: [Pause], [CapsLock], [Insert]</li>
+      <li><strong>숫자 패드</strong>: [Numpad0]-[Numpad9], [NumpadMultiply], [NumpadAdd], [NumpadComma], [NumpadSubtract], [NumpadDecimal], [NumpadDivide]</li>
+    </ul>
+    
+    
+    <h2>17. When 클로저 컨텍스트 (When clause contexts)</h2>
+    <h3>개념</h3>
+    <p><code>when</code> 클로저는 단축키가 활성화되는 조건을 지정하는 부울 표현식입니다.</p>
+    <p>예: F5 키는 "디버거 사용 가능 AND 디버그 모드 아님"일 때만 디버깅 시작 명령 실행:</p>
+    <pre><code>{ "key": "f5", "command": "workbench.action.debug.start", "when": "debuggersAvailable && !inDebugMode" }</code></pre>
+
+    <h3>조건부 연산자 (Conditional Operators)</h3>
+    <table>
+      <thead><tr><th>연산자</th><th>기호</th><th>예시</th></tr></thead>
+      <tbody>
+        <tr><td>동일성</td><td><code>==</code></td><td><code>editorLangId == typescript</code></td></tr>
+        <tr><td>부등성</td><td><code>!=</code></td><td><code>resourceExtname != .js</code></td></tr>
+        <tr><td>OR</td><td><code>||</code></td><td><code>isLinux||isWindows</code></td></tr>
+        <tr><td>AND</td><td><code>&&</code></td><td><code>textInputFocus && !editorReadonly</code></td></tr>
+        <tr><td>매칭</td><td><code>=~</code></td><td><code>resourceScheme =~ /^untitled$|^file$/</code></td></tr>
+      </tbody>
+    </table>
+
+    <h3>주요 컨텍스트</h3>
+    <ul>
+      <li><code>editorTextFocus</code>: 에디터에 텍스트 포커스가 있을 때</li>
+      <li><code>inDebugMode</code>: 디버그 모드일 때</li>
+      <li><code>debuggersAvailable</code>: 사용 가능한 디버거가 있을 때</li>
+      <li><code>resourceExtname</code>: 현재 파일의 확장자</li>
+      <li><code>editorLangId</code>: 현재 에디터의 언어 ID</li>
+      <li><code>isLinux</code>, <code>isMac</code>, <code>isWindows</code>: 플랫폼별 구분</li>
+    </ul>
+
+    <h2>18. 리팩토링 커스텀 단축키 (Custom keyboard shortcuts for refactorings)</h2>
+    <p><code>editor.action.codeAction</code> 명령으로 특정 리팩토링에 단축키 할당:</p>
+    <pre><code>{
+  "key": "ctrl+shift+r ctrl+e",
+  "command": "editor.action.codeAction",
+  "args": {
+    "kind": "refactor.extract.function"
+  }
+}
+</code></pre>
+    <p>자세한 내용은 리팩토링 관련 문서를 참조하세요.</p>
+
+    <h2>19. 일반적인 질문 (Common questions)</h2>
+    <h3>Q1: 특정 키가 어떤 명령에 할당되어 있는지 알려면?</h3>
+    <p>키보드 단축키 에디터에서 단축키를 입력하여 검색하면 그 단축키에 할당된 명령이 표시됩니다.</p>
+
+    <h3>Q2: 특정 작업에 단축키를 추가하려면? (예: Ctrl+D로 줄 삭제)</h3>
+    <p>기본 키보드 단축키에서 규칙을 찾아 <code>keybindings.json</code>에 수정된 버전을 추가합니다.</p>
+    <pre><code>{ "key": "ctrl+shift+k", "command": "editor.action.deleteLines", "when": "editorTextFocus" },
+{ "key": "ctrl+d", "command": "editor.action.deleteLines", "when": "editorTextFocus" }
+</code></pre>
+
+    <h3>Q3: 특정 파일 타입에만 단축키를 적용하려면?</h3>
+    <p><code>when</code> 클로저에서 <code>editorLangId</code> 컨텍스트를 사용합니다:</p>
+    <pre><code>{ "key": "shift+alt+a", "command": "editor.action.blockComment", "when": "editorTextFocus && editorLangId == csharp" }</code></pre>
+
+    <h3>Q4: keybindings.json에서 수정한 단축키가 작동하지 않는 이유?</h3>
+    <p>일반적인 원인: JSON 문법 오류, 충돌하는 단축키, <code>when</code> 조건 누락, 우선순위 문제 등이 있습니다.</p>
+
+    <h2>20. 관련 리소스</h2>
+    <ul>
+      <li><a href="https://code.visualstudio.com/docs/reference/default-keybindings" target="_blank" rel="noopener noreferrer">VS Code 기본 단축키 참조</a></li>
+      <li><a href="https://code.visualstudio.com/api/references/when-clause-contexts" target="_blank" rel="noopener noreferrer">When clause contexts reference</a></li>
+      <li><a href="https://code.visualstudio.com/api/references/commands" target="_blank" rel="noopener noreferrer">Built-in Commands</a></li>
+    </ul>
+
+    <hr />
+    <p><strong>최종 업데이트</strong>: 2026년 5월 9일</p>
+  </div>
+</body>
+</html>

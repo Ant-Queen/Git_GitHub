@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Code 설정 정리</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f4f6fb;
+      color: #111;
+    }
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px;
+      background: #fff;
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+    }
+    h1, h2, h3, h4 {
+      color: #1f2937;
+      margin-top: 1.8em;
+    }
+    h1 { font-size: 2.4rem; }
+    h2 { font-size: 1.7rem; }
+    h3 { font-size: 1.3rem; }
+    p, li {
+      font-size: 1rem;
+    }
+    ul, ol {
+      margin: 0.75em 0 1.5em 1.5em;
+    }
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      background: #eef2ff;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #eef2ff;
+      padding: 18px;
+      overflow-x: auto;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      margin: 1em 0;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    blockquote {
+      border-left: 4px solid #c7d2fe;
+      padding: 0.75em 1em;
+      background: #f8fafc;
+      margin: 1.25em 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>VS Code 설정 정리</h1>
+    <p>Visual Studio Code의 설정 페이지(<a href="https://code.visualstudio.com/docs/configure/settings" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/docs/configure/settings</a>)를 한국어로 요약한 문서입니다.</p>
+
+    <h2>개요</h2>
+    <p>VS Code는 거의 모든 편집기 동작, UI, 확장 기능을 설정으로 사용자화할 수 있습니다. 설정은 JSON 파일로 저장되며, Settings UI 또는 직접 <code>settings.json</code>을 편집하여 변경할 수 있습니다.</p>
+
+    <h2>설정 범위</h2>
+    <h3>사용자 설정</h3>
+    <ul>
+      <li>개인 설정으로, 현재 컴퓨터의 모든 VS Code 인스턴스에 적용됩니다.</li>
+      <li>예: 글꼴 크기를 <code>14</code>로 설정하면 모든 VS Code 창에서 동일하게 적용됩니다.</li>
+      <li>열기 방법:
+        <ul>
+          <li>명령 팔레트에서 <code>Preferences: Open User Settings</code></li>
+          <li>Settings 편집기에서 <code>User</code> 탭</li>
+          <li>명령 팔레트에서 <code>Preferences: Open User Settings (JSON)</code></li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>워크스페이스 설정</h3>
+    <ul>
+      <li>특정 프로젝트에만 적용되는 설정입니다.</li>
+      <li>프로젝트별로 <code>node_modules</code>나 빌드 구성과 같은 값을 다르게 설정할 때 유용합니다.</li>
+      <li>워크스페이스 설정은 프로젝트 루트의 <code>.vscode/settings.json</code>에 저장됩니다.</li>
+      <li>열기 방법:
+        <ul>
+          <li>명령 팔레트에서 <code>Preferences: Open Workspace Settings</code></li>
+          <li>Settings 편집기에서 <code>Workspace</code> 탭</li>
+          <li>명령 팔레트에서 <code>Preferences: Open Workspace Settings (JSON)</code></li>
+        </ul>
+      </li>
+      <li>모든 사용자 설정이 워크스페이스 설정으로 지원되는 것은 아닙니다. 예: 업데이트 및 보안 관련 일부 설정은 워크스페이스 범위에서 무시됩니다.</li>
+    </ul>
+
+    <h2>Settings 편집기</h2>
+    <ul>
+      <li>Settings 편집기는 그래픽 인터페이스로, <code>File &gt; Preferences &gt; Settings</code> 또는 <code>Ctrl+,</code>로 엽니다.</li>
+      <li>기본적으로 modal overlay 형태로 열리며, <code>workbench.editor.useModal</code>를 설정해 동작을 변경할 수 있습니다.</li>
+      <li>설정을 변경하면 즉시 적용됩니다.</li>
+      <li>수정된 설정은 왼쪽에 색 막대로 표시되어 쉽게 구분할 수 있습니다.</li>
+      <li>각 설정 항목의 톱니바퀴 아이콘(<code>Shift+F9</code>)을 클릭하면 다음 옵션을 사용할 수 있습니다:
+        <ul>
+          <li>기본값으로 재설정</li>
+          <li>설정 ID 복사</li>
+          <li>JSON 이름-값 쌍 복사</li>
+          <li>Settings URL 복사</li>
+        </ul>
+      </li>
+      <li>특정 설정으로 바로 이동하는 URL 형식: <code>vscode://settings/&lt;settingName&gt;</code></li>
+    </ul>
+
+    <h3>Settings 그룹</h3>
+    <ul>
+      <li>관련 설정이 그룹별로 정리되어 있어 빠르게 찾을 수 있습니다.</li>
+      <li><code>Commonly Used</code> 그룹이 상단에 있으며 자주 사용하는 설정을 보여줍니다.</li>
+      <li>확장 기능은 자신만의 설정 그룹을 <code>Extensions</code> 아래에 추가할 수 있습니다.</li>
+    </ul>
+
+    <h3>Settings 필터</h3>
+    <ul>
+      <li>검색 상자에 키워드를 입력하면 관련 설정만 표시됩니다.</li>
+      <li><code>@modified</code>: 기본값과 다른 설정만 필터링합니다.</li>
+      <li><code>@ext:&lt;extensionId&gt;</code>: 특정 확장에 속한 설정 검색</li>
+      <li><code>@feature:&lt;feature&gt;</code>: 기능별 설정 검색</li>
+      <li><code>@haspolicy</code>: 정책으로 제어되는 설정 검색</li>
+      <li><code>@id:&lt;settingId&gt;</code>: 설정 ID로 검색</li>
+      <li><code>@lang:&lt;languageId&gt;</code>: 언어별 설정 필터링</li>
+      <li><code>@tag:&lt;tag&gt;</code>: 예를 들어 <code>@tag:workspaceTrust</code>, <code>@tag:accessibility</code>, <code>@tag:advanced</code> 등</li>
+      <li><code>@tag:advanced</code>는 기본적으로 숨겨진 고급 설정을 표시합니다. 항상 표시하려면 <code>workbench.settings.alwaysShowAdvancedSettings</code>를 사용합니다.</li>
+      <li>검색어 기록이 저장되고 <code>Ctrl+Z</code>, <code>Ctrl+Y</code>로 실행 취소/다시 실행할 수 있습니다.</li>
+      <li>검색 상자의 오른쪽에 있는 <code>Clear Settings Search Input</code> 버튼으로 검색어를 빠르게 지울 수 있습니다.</li>
+    </ul>
+
+    <h2>확장 설정</h2>
+    <ul>
+      <li>설치된 확장은 자신의 설정을 Settings 편집기 <code>Extensions</code> 섹션에 추가합니다.</li>
+      <li>확장 보기(<code>Ctrl+Shift+X</code>)에서 확장을 선택하면 <code>Feature Contributions</code> 탭에서 확장 설정을 확인할 수 있습니다.</li>
+      <li>확장 개발자는 <code>contributes.configuration</code>을 통해 사용자 설정을 정의할 수 있습니다.</li>
+    </ul>
+
+    <h2>Settings JSON 파일</h2>
+    <ul>
+      <li>설정 값은 <code>settings.json</code> 파일에 저장됩니다.</li>
+      <li>사용자 설정 위치:
+        <ul>
+          <li>Windows: <code>%APPDATA%\Code\User\settings.json</code></li>
+          <li>macOS: <code>$HOME/Library/Application Support/Code/User/settings.json</code></li>
+          <li>Linux: <code>$HOME/.config/Code/User/settings.json</code></li>
+        </ul>
+      </li>
+      <li>워크스페이스 설정 파일 위치:
+        <ul>
+          <li>프로젝트 루트의 <code>.vscode/settings.json</code></li>
+        </ul>
+      </li>
+      <li>멀티 루트 워크스페이스에서는 워크스페이스 구성 파일 내부에 저장됩니다.</li>
+      <li><code>settings.json</code>을 직접 편집하려면 명령 팔레트에서 <code>Preferences: Open User Settings (JSON)</code> 또는 <code>Preferences: Open Workspace Settings (JSON)</code>를 사용합니다.</li>
+      <li>Settings 편집기에서 특정 설정을 JSON으로 편집할 때는 IntelliSense가 제공되고, 이름/값 쌍 복사 기능도 사용할 수 있습니다.</li>
+      <li><code>settings.json</code> 파일은 스마트 완성과 설명 툴팁, JSON 오류 표시를 지원합니다.</li>
+      <li>일부 설정은 Settings UI에서 직접 편집할 수 없고 <code>settings.json</code>에서만 변경 가능합니다. 예: Workbench: Color Customizations.</li>
+      <li>항상 <code>settings.json</code>으로 작업하려면 <code>workbench.settings.editor</code>를 <code>json</code>으로 설정하면 됩니다.</li>
+    </ul>
+
+    <h2>설정 초기화</h2>
+    <ul>
+      <li>개별 설정은 Settings 편집기에서 톱니바퀴 아이콘을 통해 기본값으로 재설정할 수 있습니다.</li>
+      <li>모든 변경된 설정을 초기화하려면 <code>settings.json</code>에서 중괄호 <code>{}</code> 사이의 내용을 삭제하면 됩니다.</li>
+      <li>주의: 삭제 후 이전 값은 복구할 수 없습니다.</li>
+    </ul>
+
+    <h2>언어별 설정</h2>
+    <h3>언어별 에디터 설정</h3>
+    <ul>
+      <li>언어별로 다른 설정을 지정할 수 있습니다.</li>
+      <li>Settings 편집기에서 필터 버튼을 눌러 언어 옵션을 선택하거나 <code>@lang:&lt;languageId&gt;</code>을 입력합니다.</li>
+      <li>언어 필터가 활성화된 상태로 설정을 변경하면 해당 언어에 대한 설정이 저장됩니다.</li>
+      <li>예: CSS 언어 필터로 <code>diffEditor.codeLens</code>를 설정하면 CSS에만 적용됩니다.</li>
+      <li>언어별 설정은 다음처럼 <code>settings.json</code>에 작성됩니다:</li>
+    </ul>
+    <pre><code>{
+  "[javascript][typescript]": {
+    "editor.maxTokenizationLineLength": 2500
+  }
+}
+</code></pre>
+    <ul>
+      <li>단일 언어 블록과 다중 언어 블록이 모두 있는 경우, 단일 언어 값이 우선합니다.</li>
+    </ul>
+
+    <h3>언어별 설정 편집 방법</h3>
+    <ul>
+      <li>명령 팔레트에서 <code>Preferences: Configure Language Specific Settings</code> 실행</li>
+      <li>언어 선택 후 해당 언어 필터가 적용된 Settings 편집기가 열립니다.</li>
+      <li><code>workbench.settings.editor</code>가 <code>json</code>이면 새 언어 항목이 있는 <code>settings.json</code>이 열립니다.</li>
+      <li>파일의 우측 하단 상태 표시줄에서 언어 모드를 선택한 뒤 <code>Configure '&lt;language_name&gt;' language based settings</code>를 선택해 설정할 수도 있습니다.</li>
+      <li>언어별 설정은 비언어별 설정보다 우선합니다.</li>
+      <li>동일 언어에 대해 사용자/워크스페이스 설정이 모두 있으면, 워크스페이스 설정이 우선 적용됩니다.</li>
+      <li>여러 언어별 설정은 전체 언어 문자열(<code>"[typescript][javascript]"</code>) 단위로 병합되며, 개별 언어 ID별 우선순위가 적용되지 않습니다.</li>
+    </ul>
+
+    <h2>프로필 설정</h2>
+    <ul>
+      <li>VS Code 프로필 기능을 사용하면 서로 다른 사용자화 세트를 저장하고 빠르게 전환할 수 있습니다.</li>
+      <li>프로필을 변경하면 해당 프로필의 사용자 설정만 적용됩니다.</li>
+      <li>프로필 설정 파일 위치:
+        <ul>
+          <li>Windows: <code>%APPDATA%\Code\User\profiles\&lt;profile ID&gt;\settings.json</code></li>
+          <li>macOS: <code>$HOME/Library/Application Support/Code/User/profiles/&lt;profile ID&gt;/settings.json</code></li>
+          <li>Linux: <code>$HOME/.config/Code/User/profiles/&lt;profile ID&gt;/settings.json</code></li>
+        </ul>
+      </li>
+      <li>프로필에서 설정을 수정하면 해당 프로필용 <code>settings.json</code> 파일이 생성됩니다.</li>
+      <li>기본 프로필이 아닌 상태에서 기본 프로필의 <code>settings.json</code>을 열려면 명령 팔레트에서 <code>Preferences: Open Application Settings (JSON)</code>을 사용합니다.</li>
+    </ul>
+
+    <h2>설정 우선순위</h2>
+    <ul>
+      <li>설정은 여러 범위를 통해 우선순위가 정해집니다.</li>
+      <li>일반적인 우선순위 목록(나중에 나올수록 우선):
+        <ol>
+          <li>Default settings</li>
+          <li>User settings</li>
+          <li>Remote settings</li>
+          <li>Workspace settings</li>
+          <li>Workspace Folder settings</li>
+          <li>Language-specific default settings</li>
+          <li>Language-specific user settings</li>
+          <li>Language-specific remote settings</li>
+          <li>Language-specific workspace settings</li>
+          <li>Language-specific workspace folder settings</li>
+          <li>Policy settings</li>
+        </ol>
+      </li>
+      <li>원시 타입(문자열, 불리언, 숫자, 배열)은 우선순위가 높은 범위의 값이 덮어씁니다.</li>
+      <li>객체 타입 값은 병합됩니다.</li>
+      <li>예: <code>workbench.colorCustomizations</code>가 사용자 설정과 워크스페이스 설정에서 모두 정의되면, 두 값을 병합하여 충돌 시 우선순위 높은 값이 적용됩니다.</li>
+      <li>언어별 설정은 비언어별 설정보다 우선합니다.</li>
+    </ul>
+
+    <h2>설정과 보안</h2>
+    <ul>
+      <li>특정 실행 파일을 지정하는 설정은 보안을 위해 사용자 설정에만 허용됩니다.</li>
+      <li>예: 터미널에서 사용할 셸 실행 파일(<code>terminal.external.windowsExec</code>, <code>terminal.external.osxExec</code>, <code>terminal.external.linuxExec</code>)은 워크스페이스 설정에서 정의할 수 없습니다.</li>
+      <li>이러한 설정이 워크스페이스에 포함되어 있으면, VS Code는 처음 워크스페이스를 열 때 경고를 표시하고 무시합니다.</li>
+    </ul>
+
+    <h2>Settings Sync</h2>
+    <ul>
+      <li>Settings Sync 기능을 사용하면 사용자 설정, 키 바인딩, 확장 등을 여러 컴퓨터 간에 동기화할 수 있습니다.</li>
+      <li>Settings 편집기 오른쪽 또는 계정 활동 표시줄에서 <code>Backup and Sync Settings</code>를 통해 활성화합니다.</li>
+      <li>원격 창(SSH, 컨테이너, WSL)에서는 확장 동기화가 지원되지 않습니다.</li>
+    </ul>
+
+    <h2>기능 수명 주기</h2>
+    <ul>
+      <li>설정은 기능 상태에 따라 <code>Experimental</code>, <code>Preview</code>, <code>Stable</code>로 표시될 수 있습니다.</li>
+      <li><code>Experimental</code> 설정은 초기 사용자용이며 이후 변경 또는 제거될 수 있습니다.</li>
+      <li><code>Preview</code> 설정은 기능적으로 완성 단계이지만 안정성 개선이 진행 중입니다.</li>
+      <li>Settings 편집기에서는 <code>@tag:experimental</code>, <code>@tag:preview</code>로 해당 설정을 검색할 수 있습니다.</li>
+      <li><code>Stable</code> 설정은 정식 지원 기능입니다.</li>
+    </ul>
+
+    <h2>관련 자료</h2>
+    <ul>
+      <li>VS Code 기본 설정 참조: <a href="https://code.visualstudio.com/docs/reference/default-settings" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/docs/reference/default-settings</a></li>
+      <li>설정 동기화 가이드: <a href="https://code.visualstudio.com/docs/configure/settings-sync" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/docs/configure/settings-sync</a></li>
+    </ul>
+
+    <h2>자주 묻는 질문</h2>
+    <h3>"Unable to write settings." 오류</h3>
+    <ul>
+      <li>설정을 변경할 때 "Unable to write into user settings. Please open user settings to correct errors/warnings in it and try again." 메시지가 나오면 <code>settings.json</code>이 잘못된 JSON 형식이거나 값이 잘못되었음을 의미합니다.</li>
+      <li>명령 팔레트에서 <code>Preferences: Open User Settings (JSON)</code>을 열면 오류가 빨간 밑줄로 표시됩니다.</li>
+    </ul>
+    <h3>사용자 설정을 초기화하려면?</h3>
+    <ul>
+      <li>명령 팔레트에서 <code>Preferences: Open User Settings (JSON)</code>을 실행합니다.</li>
+      <li>열린 파일에서 중괄호 <code>{}</code> 내부를 모두 삭제하고 저장합니다.</li>
+    </ul>
+    <h3>워크스페이스 설정을 사용하는 이유는?</h3>
+    <ul>
+      <li>특정 프로젝트에서만 적용할 설정이 필요할 때 사용합니다.</li>
+      <li>예: 언어별 린트 규칙이나 빌드 설정을 한 프로젝트에만 적용하고 싶을 때.</li>
+    </ul>
+    <h3>확장 설정은 어디서 찾나요?</h3>
+    <ul>
+      <li>대부분 확장 설정은 Settings 편집기 또는 <code>settings.json</code>에서 찾을 수 있습니다.</li>
+      <li>확장 보기(<code>Ctrl+Shift+X</code>)에서 확장을 선택하고 <code>Feature Contributions</code> 탭을 확인하면 설정 목록이 표시됩니다.</li>
+    </ul>
+  </div>
+</body>
+</html>
