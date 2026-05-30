@@ -26,9 +26,22 @@ vscode://settings/editor.fontSize
 
 ## [설정 동기화 (Settings Sync)](</VSCode/VSCode 04. 구성/VSCode 04.05 설정 동기화_Copilot.md>)
 
-## 확장
+## 확장 (Extension)
 
-### [확장 마켓플레이스 (Extension Marketplace)](</VSCode/VSCode 04. 구성/VSCode 04.06.01 확장 마켓플레이스_Copilot.md>)
+### [- 확장 마켓플레이스 (Extension Marketplace)](</VSCode/VSCode 04. 구성/VSCode 04.06.01 확장 마켓플레이스_Copilot.md>)
 
-### [확장 런타임 보안 (Extension Runtime Security)](</VSCode/VSCode 04. 구성/VSCode 04.06.02 확장 런타임 보안_Copilot.md>)
+### [- 확장 런타임 보안 (Extension Runtime Security)](</VSCode/VSCode 04. 구성/VSCode 04.06.02 확장 런타임 보안_Copilot.md>)
 
+## 테마 (Themes)
+
+## 프로필 (Profiles)
+
+## 접근성 (Accessibility)
+
+### - 개요 (Overview)
+
+### - 음성 상호작용 (Voice Interaction)
+
+## Command Line Interface (CLI)
+
+## 원격 측정 (Telemetry)
