@@ -32,9 +32,9 @@ vscode://settings/editor.fontSize
 
 ### [- 확장 런타임 보안 (Extension Runtime Security)](</VSCode/VSCode 04. 구성/VSCode 04.06.02 확장 런타임 보안_Copilot.md>)
 
-## 테마 (Themes)
+## [테마 (Themes)](</VSCode/VSCode 04. 구성/VSCode 04.07 테마_Copilot.md>)
 
-## 프로필 (Profiles)
+## [프로필 (Profiles)](</VSCode/VSCode 04. 구성/VSCode 04.08 프로필_Copilot.md>)
 
 ## 접근성 (Accessibility)
 
