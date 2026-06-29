@@ -1,4 +1,4 @@
-# VS Code 에이전트 개요 (공식 문서 요약)
+# VS Code 에이전트 개요
 
 원문: https://code.visualstudio.com/docs/agents/overview
 
