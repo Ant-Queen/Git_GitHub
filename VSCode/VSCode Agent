@@ -1,0 +1,38 @@
+# VSCode Agent
+
+## 제공형태
+
+| | | |
+| --- | --- | --- |
+| Agents window | 전용 창 | 에이전트 중심 |
+| Chat view | 에디터 내 | 코드 중심 |
+
+## 에이전트 유형
+
+| | |
+| --- | --- |
+| Local | Agent, Plan, Ask |
+| Copilot CLI | 워크트리 격리(Workspace isolation), 폴더 격리(Folder isolation) |
+| Cloud | - |
+| | |
+| Third-party | - |
+
+## 권한수준
+
+| |
+| --- |
+| 기본 승인 (Default Approvals) |
+| 승인 건너뛰기 (Bypass Approvals) |
+| Autopilot |
+
+## (Local) 메모리 유형
+
+| | `Show Memory Files` |
+| --- | --- |
+| 사용자 (User memory) | /memories/ |
+| 저장소 (Repository memory) | /memories/repo/ |
+| 세션 (Session memory) | /memories/session/|
+
+서브에이전트
+
+샌드박스(Sandbox) (preview)
