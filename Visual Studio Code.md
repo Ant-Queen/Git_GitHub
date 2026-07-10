@@ -35,3 +35,13 @@
 ### 모범 사례
 
 - `/init` 프로젝트 기본 설정
+
+### 에이전트 커스터마이징 (Agent Customization)
+
+- 맞춤 지시문 (Custom Instructions)
+- 에이전트 기술 (Agent Skills)
+- 맞춤 에이전트 (Custom Agents)
+- MCP 서버 (MCP Servers)
+- 후크 (Hooks)
+- 에이전트 플러그인 (Agent Plugins)
+- 프롬프트 파일 (Prompt Files)
